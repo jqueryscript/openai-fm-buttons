@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>OpenAI.fm-style Button Group Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e5e1dc;
+      font-family: "Jura", sans-serif;
+      margin: 0; /* Prevent default body margin */
+    }
+
+    .container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .button-group {
+      display: flex; /* Arrange buttons in a row */
+      gap: 30px; /* Add space between buttons */
+    }
+
+    /* Hide the actual radio button */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Style the label which acts as the button */
+    input[type="radio"] + .btn {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #eae6e3;
+      width: 150px;
+      height: 150px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: inset 1px 1px 2.6px white,
+        inset -1px -1px 2.6px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.2),
+        4px 4px 8px rgba(0, 0, 0, 0.14), 6px 6px 12px rgba(0, 0, 0, 0.12),
+        8px 8px 16px rgba(0, 0, 0, 0.1), 10px 10px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(120, 120, 120, 0.1);
+      transition: box-shadow 0.3s ease;
+      user-select: none;
+      cursor: pointer; /* Indicate it's clickable */
+    }
+
+    /* Style for the pressed/checked state */
+    input[type="radio"]:checked + .btn {
+      box-shadow: inset 0.5px 0.5px 1.4px white,
+        inset -0.5px -0.5px 1.4px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.1),
+        2px 2px 4px rgba(0, 0, 0, 0.12), 4px 4px 8px rgba(0, 0, 0, 0.1),
+        6px 6px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    input[type="radio"] + .btn .top {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    input[type="radio"] + .btn .bottom .dot {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: rgba(122, 122, 120, 0.2);
+      border-radius: 50%;
+      transition: 0.3s ease;
+      box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style for the dot when the button is checked */
+    input[type="radio"]:checked + .btn .bottom .dot {
+      background-color: #71bd81;
+      box-shadow: inset 0 0 0 transparent, 0 0 2px #71bd81, 0 0 4px #71bd81;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>OpenAI.fm-style Button Group Example</h1>
+  <style>
+.download{ padding: 1.25rem; border:0; border-radius:3px; background-color:#4F46E5; color:#fff;cursor:pointer; text-decoration:none;}.download:hover{color: #fff}#carbonads{display:block;overflow:hidden;max-width:728px;position:relative;font-size:22px;box-sizing:content-box}#carbonads>span{display:block}#carbonads a{color:#4F46E5;text-decoration:none}#carbonads a:hover{color:#4F46E5}.carbon-wrap{display:flex;align-items:center}.carbon-img{display:block;margin:0;line-height:1}.carbon-img img{display:block;height:90px;width:auto}.carbon-text{display:block;padding:0 1em;line-height:1.35;text-align:left}.carbon-poweredby{display:block;position:absolute;bottom:0;right:0;padding:6px 10px;text-align:center;text-transform:uppercase;letter-spacing:.5px;font-weight:600;font-size:8px;border-top-left-radius:4px;line-height:1;color:#aaa!important}@media only screen and (min-width:320px) and (max-width:759px){.carbon-text{font-size:14px}}
+</style>
+<div><div id="carbon-block"></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+     crossorigin="anonymous"></script>
+<!-- CSS_Replace_Demo -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="3576734658"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<p style="margin:2rem auto"><a class="download" href="https://www.cssscript.com/openai-fm-button-groups"></a> <a class="download" href="https://www.cssscript.com/">Back To CSSScript.Com</a></p>
+  <p>Create a modern, 3D-effect radio button group with pure CSS, inspired by OpenAI.fm. Uses labels and the :checked selector for interactive styling.</p>
+  <div class="button-group">
+    <label for="toggle1">
+      <input type="radio" id="toggle1" name="button-group" checked /> <!-- Add 'checked' for a default selection -->
+      <div class="btn">
+        <div class="top">CSS</div>
+        <div class="bottom">
+          <i class="dot"></i>
+        </div>
+      </div>
+    </label>
+
+    <label for="toggle2">
+      <input type="radio" id="toggle2" name="button-group" />
+      <div class="btn">
+        <div class="top">Script</div>
+        <div class="bottom">
+          <i class="dot"></i>
+        </div>
+      </div>
+    </label>
+
+    <label for="toggle3">
+      <input type="radio" id="toggle3" name="button-group" />
+      <div class="btn">
+        <div class="top">.Com</div>
+        <div class="bottom">
+          <i class="dot"></i>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+
+<!-- Add the Audio Element -->
+<audio id="clickSound" src="click.mp3" preload="auto"></audio>
+
+<script>
+  // Get the audio element
+  const clickSound = document.getElementById('clickSound');
+
+  // Get all the labels for the radio buttons
+  const buttonLabels = document.querySelectorAll('.button-group label');
+
+  // Add a click event listener to each label
+  buttonLabels.forEach(label => {
+    label.addEventListener('click', () => {
+      // Optional: Check if the sound is loaded and ready
+      if (clickSound && clickSound.readyState >= 2) { // HAVE_CURRENT_DATA or more
+         // Reset playback position to the beginning
+         clickSound.currentTime = 0;
+         // Play the sound
+         clickSound.play()
+           .catch(error => {
+             // Autoplay was prevented or another error occurred
+             console.error("Audio play failed:", error);
+           });
+      } else {
+          console.warn("Audio not ready or not found.");
+      }
+    });
+  });
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LLWL5N9CSM');
+</script>
+
+</body>
+</html>
